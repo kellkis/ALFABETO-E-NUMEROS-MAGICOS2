@@ -712,16 +712,7 @@ telaAventura.style.background = fundoEscolhido;
             falarTextoMaterno(`Onde está ${itemAlvo.nome}?`);
         }
 
-        function proximaEtapaAventura() {
-            itemObjetivoIndex++;
-            if (itemObjetivoIndex < itensAventuraFase.length) {
-                montarCenarioAventura();
-            } else {
-                falarTextoMaterno("Parabéns, você encontrou todos os tesouros!");
-                irParaTela('tela-menu-aventuras');
-            }
-        }
-        function proximaEtapaAventura() {
+         function proximaEtapaAventura() {
             itemObjetivoIndex++;
             if (itemObjetivoIndex < itensAventuraFase.length) {
                 montarCenarioAventura();
