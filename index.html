@@ -100,13 +100,13 @@
 }
 
         /* Estilos dos Itens Escondidos */
-        .item-escondido {
-    position: absolute; /* O segredo para não ficarem em fila */
+/* Isso força os itens a ficarem SEMPRE no topo, acima do fundo */
+.item-escondido {
+    position: absolute;
     font-size: 55px;
     cursor: pointer;
-    transition: transform 0.2s, opacity 0.3s;
-    animation: flutuarLivre 6s ease-in-out infinite;
-    z-index: 2; /* Garante que fiquem acima do fundo */
+    z-index: 9999 !important; /* O "!important" garante que nada passe por cima */
+} Garante que fiquem acima do fundo */
 }
         @keyframes flutuarLivre {
             0% {transform: translate(0, 0);}
@@ -628,7 +628,7 @@
     const dados = dadosAventuras[tipo];
 
     // Aplica a imagem de fundo corretamente
-    telaAventura.style.background = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2vXLN7ssY7qzE0ZRKMwiqvM3Ncmw8WCizBKbqpGMHIJEs3FPQLJzdsM1u&s=10')";
+    telaAventura.style.background = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRssgL825sFIiRtlq8Rm4p8EZkXfjYKUHjBB2smwYKp0qrqYk3rKg5xBX4&s=10')";
     telaAventura.style.backgroundSize = "cover";
     telaAventura.style.backgroundPosition = "center";
     telaAventura.style.backgroundRepeat = "no-repeat";
