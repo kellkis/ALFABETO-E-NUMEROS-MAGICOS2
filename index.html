@@ -228,10 +228,11 @@
             <button class="btn-navegacao btn-inicio" onclick="irParaTela('tela-abertura')">🏠 Início</button>
             <button class="btn-navegacao" onclick="irParaTela('tela-menu-aventuras')">⬅ Voltar</button>
         </div>
-        <div style="padding: 20px; padding-top: 65px; z-index: 4; width: 100%;">
-            <h1 id="aventura-titulo" style="color: white; text-shadow: 2px 2px 8px rgba(0,0,0,0.3); margin: 0; font-size: 28px;">Castelo Mágico</h1>
-            <div id="painel-procurar" style="background: rgba(255,255,255,0.9); color: #333; padding: 10px 20px; border-radius: 25px; margin-top: 10px; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); font-weight: 900; font-size: 18px;">
-                <span>Encontre o item:</span> <span id="aventura-item-procurado-emoji" style="font-size: 20px;">👑</span>
+        <div style="position: absolute; top: 70px; left: 0; width: 100%; display: flex; flex-direction: column; align-items: center; z-index: 10; pointer-events: none;">
+            <h1 id="aventura-titulo" style="color: white; text-shadow: 2px 2px 8px rgba(0,0,0,0.5); margin: 0; font-size: 26px;">Castelo Mágico</h1>
+            <div id="painel-procurar" style="background: rgba(255,255,255,0.9); color: #333; padding: 8px 20px; border-radius: 25px; margin-top: 5px; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); pointer-events: none;">
+                <span>Encontre o item:</span>
+                <span id="aventura-item-procurado-emoji" style="font-size: 24px;">👑</span>
             </div>
         </div>
         <!-- Cenário interativo onde os itens mudam de lugar -->
